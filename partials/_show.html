@@ -1,0 +1,8 @@
+<div id='problem{{problem.id}}'>
+    <p>
+        <span>题目名称：{{problem.body}}</span><br>
+    <div ng-repeat='choice in problem.choices'>
+        <label for="problem{{problem.id}}_choice{{choice.id}}"><input type='radio' id="problem{{problem.id}}_choice{{choice.id}}" name='choices{{problem.id}}' value='{{choice.id}}' ng-model="$parent.answer">{{choice.body}}</label>
+    </div><br>
+    </p>
+</div>

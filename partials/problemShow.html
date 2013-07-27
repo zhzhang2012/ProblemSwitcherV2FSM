@@ -1,0 +1,7 @@
+<div id="pt-main" class="pt-perspective" switch="showSummary()">
+    <div class="pt-page pt-page-{{problem.id}} problemContent" ng-repeat='problem in problems' problem></div>
+</div>
+<button ng-hide="last" class="pt-touch-button pt-triggers" id='iterateEffects'>继&nbsp;续</button>
+<button ng-show="last" class="pt-touch-button pt-triggers" onclick="FSM.complete()">完&nbsp;成</button>
+
+<script src="js/pagetransitions.js"></script>
